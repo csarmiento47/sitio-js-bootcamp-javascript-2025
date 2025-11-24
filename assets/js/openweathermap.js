@@ -5,7 +5,7 @@ $('#buscar').on('click', function() {
         console.log(ciudad_buscada);
         let units = 'metric';
         let lang = 'es';
-        let apiid = '6e1ef3f6b634b43a754122a24660baf4';
+        let apiid = 'ESCRIBA AQUI SU API_ID OBTENIDO DIRECTAMENTE DESDE OPENWEATHERMAP';
         let urlOpenWeatherMap = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad_buscada}&lang=${lang}&units=${units}&appid=${apiid}`;
         $.getJSON(urlOpenWeatherMap, function(dataClima) {
             console.log(dataClima);
